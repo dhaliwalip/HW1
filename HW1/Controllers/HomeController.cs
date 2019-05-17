@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using HW1.Models;
 
 namespace HW1.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public class HomeViewModel
         {
-            return View();
+            public int PhoneCount;
+            public int UserCount;
+            public DateTime LastAcessDate;
         }
+
+        return View();
+    }
+
+
 
         public ActionResult FAQ()
         {
