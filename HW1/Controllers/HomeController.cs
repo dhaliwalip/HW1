@@ -7,16 +7,16 @@ using HW1.Models;
 
 namespace HW1.Controllers
 {
-    public class HomeController : Controller
+    public ActionResult Index()
     {
-        public class HomeViewModel
+        var myData = new HomeViewModel
         {
-            public int PhoneCount;
-            public int UserCount;
-            public DateTime LastAcessDate;
-        }
+            PhoneCount = 10,
+            UserCount = 15,
+            LastAcessDate = DateTime.Now
 
-        return View();
+        };
+        return View(myData);
     }
 
 
