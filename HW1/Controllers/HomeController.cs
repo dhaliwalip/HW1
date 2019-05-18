@@ -39,5 +39,4 @@ namespace HW1.Controllers
 
             return View();
         }
-    }
 }
